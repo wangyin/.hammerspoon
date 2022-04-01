@@ -24,7 +24,7 @@ function toggleAppByBundleId(appBundleID)
     end
 
     -- 两者重复时,寻找下一个该窗口
-    if frontMostApp:bundleID() == appBundleID then
+    if frontMostApp ~= nil and frontMostApp:bundleID() == appBundleID then
         local wf = hs.window.filter.new{frontMostApp:name()}
         local locT = wf:getWindows({hs.window.filter.sortByFocusedLast})
         if locT and #locT > 1 then
