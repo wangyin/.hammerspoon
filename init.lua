@@ -27,7 +27,7 @@ hs.window.animationDuration = 0
 --     end
 -- end
 
-hsreload_keys = {{"cmd", "shift", "ctrl"}, "R"}
+local hsreload_keys = {{"cmd", "shift", "ctrl"}, "R"}
 if string.len(hsreload_keys[2]) > 0 then
     hs.hotkey.bind(hsreload_keys[1], hsreload_keys[2], "Reload Configuration", function() hs.reload() end)
 end
@@ -80,7 +80,7 @@ if not hsapp_list then
       {key = 's', name = 'Safari'},
       {key = 'v', name = 'Visual Studio Code'},
       {key = 'a', id = 'com.apple.ActivityMonitor'},
-      {key = 'y', id = 'com.apple.systempreferences'},
+      {key = 'p', id = 'com.apple.systempreferences'},
   }
 end
 for _, v in ipairs(hsapp_list) do
