@@ -42,7 +42,7 @@ obj.honor_ignoredidentifiers = true
 --- TextClipboardHistory.paste_on_select
 --- Variable
 --- Whether to auto-type the item when selecting it from the menu. Can be toggled on the fly from the chooser. Defaults to `false`.
-obj.paste_on_select = getSetting("paste_on_select", false)
+obj.paste_on_select = getSetting("paste_on_select", true)
 
 --- TextClipboardHistory.logger
 --- Variable
